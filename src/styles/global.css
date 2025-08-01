@@ -302,6 +302,19 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+.pagefind-ui {
+    margin-bottom: 1.5rem;
+}
+
+.pagefind-ui__search-input {
+    color: #00ffff !important;
+    background-color: inherit !important;
+}
+.pagefind-ui__search-input::-webkit-input-placeholder {
+    color: #00ffff !important;
+    opacity: 100%;
+}
+
 .pagefind-ui__result-link {
     color: #00ffff !important;
     text-decoration: none !important;

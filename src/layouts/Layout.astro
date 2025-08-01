@@ -46,19 +46,80 @@ const navItems = navOrder
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link rel="stylesheet" href="/src/styles/global.css" />
 	</head>
 	<body>
-		<nav>
-			<h1><a href="/">Jump Guard</a></h1>
-			<ul>
-				<li><a href="/">Overview</a></li>
-				{navItems.map(item => (
-					<li><a href={item.url}>{item.title}</a></li>
-				))}
-			</ul>
-		</nav>
-		<main>
-			<slot />
-		</main>
+		<div class="stars" id="starfield"></div>
+		<div class="nebula"></div>
+		
+		<div class="jump-ring"></div>
+		<div class="jump-ring"></div>
+		<div class="jump-ring"></div>
+		
+		<div class="layout-container">
+			<nav>
+				<h1><a href="/">Jump Guard</a></h1>
+				<ul>
+					<li><a href="/">Overview</a></li>
+					{navItems.map(item => (
+						<li><a href={item.url}>{item.title}</a></li>
+					))}
+				</ul>
+			</nav>
+			<main>
+				<slot />
+			</main>
+		</div>
+
+		<script>
+			// Create starfield
+			function createStars() {
+				const starfield = document.getElementById('starfield');
+				if (!starfield) return;
+				
+				const numStars = 150;
+				
+				for (let i = 0; i < numStars; i++) {
+					const star = document.createElement('div');
+					star.className = 'star';
+					
+					const size = Math.random() * 3 + 1;
+					star.style.width = size + 'px';
+					star.style.height = size + 'px';
+					star.style.left = Math.random() * 100 + '%';
+					star.style.top = Math.random() * 100 + '%';
+					star.style.animationDelay = Math.random() * 3 + 's';
+					
+					starfield.appendChild(star);
+				}
+			}
+			
+			// Create floating particles
+			function createParticles() {
+				const body = document.body;
+				const numParticles = 20;
+				
+				for (let i = 0; i < numParticles; i++) {
+					const particle = document.createElement('div');
+					particle.className = 'particle';
+					
+					const size = Math.random() * 4 + 2;
+					particle.style.width = size + 'px';
+					particle.style.height = size + 'px';
+					particle.style.left = Math.random() * 100 + '%';
+					particle.style.top = Math.random() * 100 + '%';
+					particle.style.animationDelay = Math.random() * 6 + 's';
+					particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+					
+					body.appendChild(particle);
+				}
+			}
+			
+			// Initialize effects
+			document.addEventListener('DOMContentLoaded', () => {
+				createStars();
+				createParticles();
+			});
+		</script>
 	</body>
 </html>

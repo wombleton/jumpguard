@@ -5,4 +5,72 @@ export const prerender = false;
 const q = Astro.url.searchParams.get("q") ?? undefined;
 ---
 
-<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} query={q} />
+<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false, resetStyles: false }} query={q} />
+
+<style is:global>
+:root {
+ --pagefind-ui-scale: 0.8;
+ --pagefind-ui-primary: var(--menu-surface);
+ --pagefind-ui-text: var(--text-primary);
+ --pagefind-ui-message-text: var(--text-primary);
+ --pagefind-ui-result-title-text: var(--text-primary);
+ --pagefind-ui-result-text: var(--text-primary);
+ --pagefind-ui-background: var(--surface1)
+ --pagefind-input-background: var(--brand);
+ --pagefind-ui-border: var(--accent1);
+ --pagefind-ui-tag: #0d0a01;
+ --pagefind-ui-border-width: 2px;
+ --pagefind-ui-border-radius: 8px;
+ --pagefind-ui-image-border-radius: 8px;
+ --pagefind-ui-image-box-ratio: 3 / 2;
+ --pagefind-ui-font: sans-serif;
+ --pagefind-button-background: var(--pagefind-input-background);
+ --pagefind-button-color: var(--pagefind-ui-message-text);
+ --pagefind-ui-primary: var(--menu-surface);
+ --pagefind-ui-text: #fff;
+ --pagefind-ui-message-text: var(--text-primary);
+ --pagefind-ui-result-title-text: var(--brand);
+ --pagefind-ui-result-text: var(--text-primary);
+ --pagefind-ui-background: var(--surface1);
+ --pagefind-input-background: var(--brand);
+ --pagefind-ui-border: var(--accent1);
+ --pagefind-ui-tag: var(--text-primary);
+ --pagefind-button-color: var(--pagefind-ui-text);
+}
+#search .pagefind-ui__search-input, #search .pagefind-ui__search-clear {
+ background-color: var(--pagefind-input-background);
+ color: var(--pagefind-ui-text);
+ margin-bottom: 1rem;
+ }
+#search .pagefind-ui__result-title, #search .pagefind-ui__result-link {
+ display: inline-block;
+ color: var(--pagefind-ui-result-title-text);
+ }
+ #search .pagefind-ui__result {
+  padding: 0.25rem 0;
+ }
+#search .pagefind-ui__result-excerpt {
+ color: var(--pagefind-ui-result-text);
+ font-weight: 400;
+ }
+#search .pagefind-ui__message {
+ color: var(--pagefind-ui-message-text);
+ padding-bottom: 0;
+ margin-bottom: 0;
+ }
+#search .pagefind-ui__button {
+ color: var(--pagefind-button-color);
+ }
+#search .pagefind-ui__result-thumb {
+ display: none;
+ }
+ #search .pagefind-ui__search-clear {
+  color: #000;
+  height: unset;
+  padding: 0.5rem;
+  background: #fff;
+  border: none;
+  box-shadow: unset;
+  margin: 10px 2px 0 0;
+ }
+</style>

@@ -1,0 +1,71 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+// Define navigation order and titles
+const navOrder = [
+	{ slug: 'ship-crew', title: 'The Ship Crew' },
+	{ slug: 'space-turn', title: 'Space Turn' },
+	{ slug: 'ship-turn', title: 'Ship Turn' },
+	{ slug: 'end-of-session', title: 'End of the Session' },
+	{ slug: 'missing-session', title: 'Missing a Session' },
+	{ slug: 'obstacles', title: 'Obstacles' },
+	{ slug: 'conflicts', title: 'Conflicts' },
+	{ slug: 'conditions', title: 'Conditions' },
+	{ slug: 'abilities-skills', title: 'Abilities and Skills' },
+	{ slug: 'factoring-obstacles', title: 'Factoring Obstacles' },
+	{ slug: 'will', title: 'Will' },
+	{ slug: 'health', title: 'Health' },
+	{ slug: 'circles', title: 'Circles' },
+	{ slug: 'traits', title: 'Traits' },
+	{ slug: 'spending-trait-checks', title: 'Spending Trait Checks' }
+];
+
+// Get all pages for navigation
+const pages = await Astro.glob('../pages/*.{astro,md}');
+const pageMap = new Map();
+
+pages.forEach(page => {
+	const url = page.url || page.file?.split('/pages')[1]?.replace(/\.(astro|md)$/, '') || '';
+	const cleanUrl = url.startsWith('/') ? url : `/${url}`;
+	const slug = cleanUrl.replace('/', '');
+	if (slug) pageMap.set(slug, cleanUrl);
+});
+
+// Build navigation items in the specified order
+const navItems = navOrder
+	.filter(item => pageMap.has(item.slug))
+	.map(item => ({
+		url: pageMap.get(item.slug),
+		title: item.title
+	}));
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="A hack of MouseGuard for the Mongoose Traveller setting." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<nav>
+			<h1><a href="/">Jump Guard</a></h1>
+			<ul>
+				<li><a href="/">Overview</a></li>
+				{navItems.map(item => (
+					<li><a href={item.url}>{item.title}</a></li>
+				))}
+			</ul>
+		</nav>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>

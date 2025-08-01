@@ -3,10 +3,14 @@ import Search from '../components/Search.astro';
 import '../styles/global.css';
 
 export interface Props {
-	title: string;
+	title?: string;
+	frontmatter?: {
+		title?: string;
+	};
 }
 
-const { title } = Astro.props;
+const { title, frontmatter } = Astro.props;
+const pageTitle = title || frontmatter?.title || 'Jump Guard';
 
 // Define navigation order and titles
 const navOrder = [
@@ -48,7 +52,7 @@ const navItems = navOrder
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<div class="stars" id="starfield"></div>

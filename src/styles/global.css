@@ -53,7 +53,7 @@ body {
         radial-gradient(ellipse at 20% 30%, rgba(138, 43, 226, 0.3) 0%, transparent 50%),
         radial-gradient(ellipse at 80% 70%, rgba(30, 144, 255, 0.2) 0%, transparent 50%),
         radial-gradient(ellipse at 50% 50%, rgba(255, 20, 147, 0.1) 0%, transparent 70%);
-    animation: nebulaDrift 20s infinite linear;
+    animation: nebulaDrift 180s infinite linear;
     z-index: 1;
     pointer-events: none;
 }

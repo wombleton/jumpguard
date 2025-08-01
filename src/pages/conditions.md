@@ -13,27 +13,37 @@ The default state. No penalties to tests or conflicts. Characters operate at ful
 
 ## Stressed
 
-Mental strain from pressure, fear, or overwhelming situations. -1 die penalty to all tests until recovered.
+Mental strain from pressure, fear, or overwhelming situations. 
+
+> Any of the crew being Stressed subtracts 1 from all conflict disposition.
 
 ## Angry
 
-Emotional volatility from frustration, betrayal, or injustice. -1 die penalty to all tests, but +1 die to actions driven by anger.
+Emotional volatility from frustration, betrayal, or injustice. 
+
+> Any of the crew being Angry subtracts 1 from a conflict that uses Will as its base.
 
 ## Tired
 
-Physical or mental exhaustion from overexertion or lack of rest. -1 die penalty to all tests until proper rest is obtained.
+Physical or mental exhaustion from overexertion or lack of rest.
+
+> Any of the crew being Tired subtracts 1 from all conflict disposition.
 
 ## Injured
 
-Physical harm from combat, accidents, or environmental dangers. -1 die penalty to all tests, may worsen if not treated.
+Physical harm from combat, accidents, or environmental dangers.
+
+> Being Injured subtracts -1D from Will, Health, and skill tests. It does not affect Circles or condition recovery rolls.
 
 ## Sick
 
-Illness, poisoning, or disease. -1 die penalty to all tests, may spread to others or worsen over time.
+Illness, poisoning, or disease.
+
+> Being Sick subtracts -1D from Will, Health, and skill tests. It does not affect Circles or condition recovery rolls.
 
 ## Rating zero
 
-When any ability drops to zero, the character is incapacitated in that area. Zero Will means breakdown, zero Health means unconscious.
+If your ability in any test is reduced to zero from being Injured or Sick, you cannot test it. You cannot benefit from teamwork or help.
 
 ## Multiple conditions
 
@@ -41,25 +51,43 @@ Conditions stack - each one imposes its penalty separately. Multiple conditions 
 
 ## Conditions of failure
 
-Failed tests often result in conditions rather than simple failure. This keeps the story moving while imposing meaningful consequences.
+- Stressed can be the result of any test.
+- Social tests can result in Angry.
+- Athletic tests can result in Tired, or Injured.
+- Work on ships can result in Angry, or Tired.
+- Academic work can result in Tired.
 
 ## Conditions in conflicts
 
-Conditions apply their penalties during conflicts and may worsen based on conflict results. Severe injuries in fights can impose multiple conditions.
+Roll disposition and then apply the penalties from conditions. Stressed, Angry, and Tired will do this. Apply the unique conditions in a team.
+
+Injured & Sick affect almost all rolls from the crewmembers.
 
 ## Conditions as part of compromise
 
-Characters might accept conditions as part of a conflict compromise, trading immediate harm for achieving partial goals.
+You can apply conditions as part of a compromise, or even multiple conditions for major compromises.
 
 ## Recovery
 
 ### Recovery order
 
-Recovery tests must be made in specific order: Angry and Stressed first, then Tired, then Injured, then Sick. You cannot recover from later conditions while earlier ones remain.
+Recovery tests must be made in specific order: Stressed first, then Angry, then Tired, then Injured, then Sick. You cannot recover from later conditions while earlier ones remain.
 
 ### Stressed
 
-Recovery obstacle 3. Success removes the condition. Failure means it persists and you cannot attempt recovery again until circumstances change.
+You just need a break! Test one of these skills at Obstacle 1 to recover from being Stressed:
+
+**Suggested Skills (Ob 1):**
+- **Art**: Express yourself creatively to release tension
+- **Athletics**: Work out physical stress through exercise
+- **Carouse**: Blow off steam in social settings
+- **Gambler**: Take your mind off problems with games
+- **Medic**: Practice self-care and stress management
+- **Steward**: Comfort yourself with good food and hospitality
+
+The GM may allow other appropriate skills based on how the character chooses to relax and decompress.
+
+If this test fails, the crewmember must wait for another GM Turn to attempt to recover from it again.
 
 ### Angry
 

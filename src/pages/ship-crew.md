@@ -17,7 +17,7 @@ Beliefs are fundamental convictions that drive your character's actions. They sh
 
 ## Goals
 
-Goals are specific, achievable objectives your character wants to accomplish during the current adventure or story arc. They should be concrete and measurable. Examples: "Find evidence of illegal weapons dealing on Regina," "Convince the captain to take the high-paying but dangerous job," or "Repair my relationship with my estranged sister." Completing goals earns rewards.
+Goals are specific, achievable objectives your character wants to accomplish during the current Space Turn. They should be concrete and measurable. Examples: "Find evidence of illegal weapons dealing on Regina," "Convince the captain to take the high-paying but dangerous job," or "Repair my relationship with my estranged sister." Completing goals earns rewards.
 
 ## Instincts
 

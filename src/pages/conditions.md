@@ -91,16 +91,36 @@ If this test fails, the crewmember must wait for another GM Turn to attempt to r
 
 ### Angry
 
-Recovery obstacle 3. Often requires resolving the underlying cause of anger or receiving meaningful apology/justice.
+Recovering from Angry is an Ob 2 Will test. If you succeed the anger fades. If you fail it persists. You may test in Ship Turn, or spend checks to test in Space Turn. Describe what you do to attempt to resolve your anger—meditated in the observation deck, worked out in the ship's gym, repaired equipment to focus your mind, or vented frustration in the ship's holodeck.
 
 ### Tired
 
-Recovery obstacle 2. Requires adequate rest or recuperation time. Can sometimes be resolved through simple downtime.
+Fatigue can be recovered from in four ways:
+
+1. **Jumpspace Recovery**: The week-long lull of jumpspace travel automatically removes the Tired condition. The isolation from normal space-time provides perfect rest and restoration.
+
+2. **Deep Relaxation**: Quality rest at a Traveller's Aid Society facility, luxury resort, or other deeply relaxing place automatically removes the Tired condition. This is not a night of sleep between watches.
+
+3. **Steward Care**: Another crewmember can attempt an Ob 2 Steward test to provide proper care, nutrition, and comfort. Success removes the Tired condition.
+
+4. **Push Through**: Make an Ob 3 Health test to overcome exhaustion through willpower alone. Success removes the condition. Failure means the Tired condition persists until you get proper rest or care.
 
 ### Injured
 
-Recovery obstacle 4. May require medical attention, proper supplies, or extended healing time depending on severity.
+Physical trauma requires time and care to heal properly. You can attempt an Ob 4 Health test to overcome the pain and dysfunction through willpower alone. Success removes the condition. Failure means the injury persists until you receive proper medical attention.
+
+Medical treatment requires an Ob 3 Medic test from another crew member or qualified healthcare provider. Success heals the injury and removes the condition. If the medical treatment fails, the injury heals improperly, causing permanent damage - reduce one ability or skill (except Resources and Circles) by one level as chosen by the GM. This reduction can be restored later through normal advancement.
+
+Example: The engineer is injured during a reactor malfunction. The ship's medic attempts treatment with an Ob 3 Medic test but fails. The GM reduces the engineer's Health from 4 to 3, explaining "The burns have left you with reduced lung capacity." The injury condition ends, but the permanent reduction remains until advanced.
+
+Alternatively, a player may choose to forgo medical treatment during Ship Turn. The character pushes through the injury but suffers the permanent ability reduction described above. This choice doesn't require a test or check expenditure.
+
+In the field, sometimes there's no time to wait for proper medical care. It's often better to accept permanent damage rather than operate under the ongoing penalty to all abilities and skills.
 
 ### Sick
 
-Recovery obstacle 4-6 depending on severity. May require specific treatments, medicines, or quarantine periods.
+Recovery from illness requires an Ob 4 Will test to fight off the infection or toxins. Success eliminates the condition. Failure means the sickness persists until the character receives medical treatment.
+
+Medical treatment requires an Ob 3 Medic test from another crew member or qualified healthcare provider. Success cures the illness and removes the condition. If the medical treatment fails, the illness causes permanent damage - reduce one ability or skill (except Resources and Circles) by one level as chosen by the GM. This reduction can be restored later through normal advancement.
+
+Alternatively, a player may choose to forgo medical treatment during Ship Turn. The character recovers from the immediate symptoms but suffers the permanent ability reduction described above. This choice doesn't require a test or check expenditure.

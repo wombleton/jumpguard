@@ -15,7 +15,7 @@ Obstacles represent challenges that require dice rolls to overcome. Set obstacle
 
 Core testing mechanics.
 
-### No shortcuts (adapted from Mouse Guard)
+### No shortcuts
 
 When facing an obstacle, characters must use the appropriate skill and approach. You can't bypass a technical challenge with pure charisma, or solve a diplomatic crisis with gunfire (usually). The fiction must support your approach.
 
@@ -85,7 +85,18 @@ Other characters can assist with tests to recover from conditions, representing 
 
 ### Beginner's luck
 
-Characters can attempt tests using skills they don't possess by rolling only their base attribute dice. Success is possible but difficult, and failure often carries additional consequences.
+When a character attempts a test using a skill they don't possess, they rely on raw ability and intuition. If a character does not have an appropriate skill for a test, they may roll their Will or Health instead. Total up the dice for the ability, wises, help and gear. Make the test using half that number, rounded up. If the skill is physical, use half of Health. If the skill is mental or social-oriented, use half of Will.
+
+Easy tasks won't be too much of a problem, but more complex operations will be significantly harder.
+
+*Example: The engineer doesn't have the Pilot skill but needs to dock the ship in an emergency. She rolls half her Will, rounded up, versus the docking obstacle.*
+
+#### Spending Persona Points on Unskilled Tests
+Persona points are added after the number of dice is halved.
+
+If an ability is at zero due to Injury or Sickness, you cannot test it using Beginner's Luck at this time. You must wait until you've recovered.
+
+Using Beginner's Luck is the first step in learning a new skill. See the Learning New Skills heading in the Abilities and Skills chapter for the complete process.
 
 ## Factoring Obstacles
 

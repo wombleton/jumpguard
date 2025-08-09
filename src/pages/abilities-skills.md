@@ -94,6 +94,64 @@ Failed Circles tests don't just mean no help - they can introduce enemies, rival
 
 Relationships evolve through play. Allies can become rivals through your actions, and enemies might become valuable contacts if you find common ground.
 
+## Resources
+
+Resources represents your access to credits, connections, and material wealth across known space. Whether through personal fortune, corporate backing, or resourceful networking, your Resources rating determines what you can acquire on short notice.
+
+Resources ratings range from 1 to 10, representing everything from a struggling drifter to a sector-spanning merchant prince.
+
+### Home system advantage
+
+You get +1 die when using Resources in your home system, where your reputation, connections, and established credit lines provide better access to goods and services.
+
+### Common Resources obstacles
+
+Test Resources to acquire equipment, services, or passage. The galactic economy runs on Imperial credits, but favors, information, and reputation can be just as valuable as hard currency.
+
+**Starport basics:**
+- Station meal or drinks, Ob 1
+- Hostel bunk for the night, Ob 2  
+- Standard clothing or personal items, Ob 2
+- Basic tools or equipment, Ob 3
+- Quality starport lodging, Ob 3
+
+**Equipment and weapons:**
+- Simple melee weapons (blade, club), Ob 3
+- Basic protective gear (cloth armor, vacc suit patches), Ob 3
+- Advanced weapons (laser pistol, accelerator rifle), Ob 4
+- Military-grade armor or equipment, Ob 4
+- Restricted or military hardware, Ob 5+
+
+**Transportation:**
+- Low passage ticket, Ob 3
+- Middle passage ticket, Ob 4
+- High passage luxury travel, Ob 5
+- Charter a small craft, Ob 5
+- Purchase used starship components, Ob 6+
+
+**Information and services:**
+- Local information or minor favors, Ob 2
+- Professional services (legal, medical), Ob 3
+- Specialized expertise or rare data, Ob 4
+- Corporate or government access, Ob 5+
+
+### Resources factors
+
+For items not listed above, combine these factors to determine obstacle:
+
+**Availability:** Common (+1), Uncommon (+2), Rare (+3), Restricted (+4)
+**Quality:** Basic (+1), Professional (+2), Military-grade (+3), Cutting-edge (+4)
+**Quantity:** Single item (0), Multiple (+1), Bulk order (+2)
+**Legality:** Legal (0), Questionable (+1), Illegal (+2), Highly restricted (+3)
+
+A character wanting to buy a personal grav vehicle might face: Uncommon (+2) + Professional (+2) = Ob 4.
+
+### Cash flow crisis
+
+Failed Resources tests can result in standard conditions (Angry, Tired) or the special depletion condition. When depleted, reduce Resources by 1 - representing overextended credit, frozen accounts, or burned connections.
+
+You still get what you were seeking, but at significant cost to your financial standing. Depleted Resources can be advanced normally through successful tests and character development.
+
 ## Skills
 
 All Mongoose Traveller skills are available in Jump Guard, adapted for the narrative-focused gameplay.
